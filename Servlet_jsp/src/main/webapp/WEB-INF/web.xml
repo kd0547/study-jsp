@@ -10,14 +10,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>Servlettest</display-name>
-    <servlet-name>Servlettest</servlet-name>
-    <servlet-class>com.servlet.test.Servlettest</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Servlettest</servlet-name>
-    <url-pattern>/Servlettest</url-pattern>
-  </servlet-mapping>
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error/error404.jsp</location>
+  </error-page>
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/error/error500.jsp</location>
+  </error-page>
 </web-app>
